@@ -2,10 +2,11 @@ mod module1;
 mod vector_l;
 mod sort_l;
 mod panic_l;
+mod flood_type;
+mod trait_l;
 
 // module2 是module1的子模块,这里使用use,是方便后面进行路径的简写
 use crate::module1::module2;
-
 use crate::sort_l::sort;
 // vector在根路径下,不需要再使用use,
 // use crate::vector_l;
@@ -28,6 +29,11 @@ fn main() {
 
     // vector_l::hash_map();
 
-    panic_l::fc();
+    // panic_l::fc();
 
+    // 泛型
+    // flood_type::flood_l();
+
+
+    trait_l::trait_p();
 }
