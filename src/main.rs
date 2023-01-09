@@ -4,6 +4,7 @@ mod sort_l;
 mod panic_l;
 mod flood_type;
 mod trait_l;
+mod life_cycle;
 
 // module2 是module1的子模块,这里使用use,是方便后面进行路径的简写
 use crate::module1::module2;
@@ -35,6 +36,9 @@ fn main() {
     // flood_type::flood_l();
 
 
-    trait_l::trait_p();
+    // trait_l::trait_p();
     //.. 
+
+    // 生命周期
+    life_cycle::life_fn();
 }
